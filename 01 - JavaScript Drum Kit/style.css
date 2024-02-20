@@ -1,16 +1,57 @@
-* {
+html {
+    font-size: 10px;
+    background: url('image/peakpx.jpg') bottom center;
+    background-size: cover;
+}
+
+body,
+html {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    font-family: sans-serif;
 }
 
-html, body{
-    font-family: Arial, sans-serif;
-    height: 100%;
-    width: 100%;
+.keys {
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
 }
 
-.navbar{
+.key {
+    border: .4rem solid black;
+    border-radius: .5rem;
+    margin: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem .5rem;
+    transition: all .07s ease;
+    width: 10rem;
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.4);
+    text-shadow: 0 0 .5rem black;
+}
+
+.playing {
+    transform: scale(1.1);
+    border-color: #ffc600;
+    box-shadow: 0 0 1rem #ffc600;
+}
+
+kbd {
+    display: block;
+    font-size: 4rem;
+}
+
+.sound {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    color: #ffc600;
+}
+
+.navbar {
     width: auto;
     height: auto;
     background-color: rebeccapurple;
@@ -21,13 +62,13 @@ html, body{
     padding: 0 20px;
 }
 
-.navLogo img{
+.navLogo img {
     width: 100px;
     background-color: greenyellow;
     border-radius: 50%;
 }
 
-.navMain{
+.navMain {
     width: 50%;
     /* background-color: aliceblue; */
     display: flex;
@@ -36,7 +77,7 @@ html, body{
     justify-content: space-between;
 }
 
-.navMain a{
+.navMain a {
     font: bolder;
     font-weight: bolder;
     font-size: 18px;
@@ -69,11 +110,4 @@ html, body{
 
 .dropdown:hover .dropdown-content {
     display: block;
-}
-
-.body{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
 }
